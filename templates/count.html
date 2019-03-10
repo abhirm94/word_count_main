@@ -1,0 +1,8 @@
+<h1>WORD COUNT PAGE</h1>
+<h2>
+     You have entered {{ word_count}} words and these are the words you entered, in the order of their frequncy.
+</h2>
+{% for word,count in  count_text_dict %}
+<h3>{{ word }} {{ count }}</h3>
+{% endfor %}
+<a href="{%  url 'home' %}">COUNT AGAIN</a>
